@@ -37,8 +37,12 @@ class CVController extends Controller
 
     public function generatePdf($id)
 {
-    $cv = Cv::findOrFail($id);
-    $pdf = Pdf::loadView('pdf.cv', ['cv' => $cv]);
-    return $pdf->download('cv.pdf');
+    // $cv = Cv::findOrFail($id);
+    // $pdf = Pdf::loadView('pdf.cv', ['cv' => $cv]);
+    // return $pdf->download('cv.pdf');
+        // Check if CV exists
+        $cv = Cv::findOrFail($id);
+        $pdf = Pdf::loadView('pdf.cv', compact('cv'));
+        return $pdf->download('cv-' . $cv->id . '.pdf');
 }
 }

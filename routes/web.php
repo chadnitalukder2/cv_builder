@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/cvs/{id}/pdf', [CVController::class, 'generatePdf']);
+// Route::get('/cvs/{id}/pdf', [CVController::class, 'generatePdf']);
+Route::get('/cvs/{id}/download', [CvController::class, 'generatePdf']);

@@ -6,5 +6,5 @@ import CreateCv from './components/CreateCv.vue';
 <template>
     <Dashboard/>
 <h1>Hello App vue</h1>
-<CreateCv/>
+<router-view></router-view>
 </template>
