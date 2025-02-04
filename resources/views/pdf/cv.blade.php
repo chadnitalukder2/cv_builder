@@ -102,6 +102,8 @@
         <div class="header">
             <h1>CHADNI TALUKDER</h1>
             <h2>WEB DEVELOPER</h2>
+
+            
         </div>
         <div class="contact-info">
             <div><i class="fas fa-phone"></i> +880131799654</div>
