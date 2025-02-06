@@ -4,7 +4,5 @@ import CreateCv from './components/CreateCv.vue';
 </script>
 
 <template>
-    <Dashboard/>
-<h1>Hello App vue</h1>
 <router-view></router-view>
 </template>
