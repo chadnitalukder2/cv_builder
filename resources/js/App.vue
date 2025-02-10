@@ -6,3 +6,6 @@ import CreateCv from './components/CreateCv.vue';
 <template>
 <router-view></router-view>
 </template>
+
+
+
